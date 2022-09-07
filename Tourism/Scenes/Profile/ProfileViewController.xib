@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Tourism" customModuleProvider="target">
+            <connections>
+                <outlet property="profileImageView" destination="9wa-aq-8OB" id="XuP-VT-2If"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-5i-DES" userLabel="Status Bar View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                    <color key="backgroundColor" name="TPrimary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="CUX-o0-KtM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-a1-SFP" userLabel="Navigation Bar View">
+                    <rect key="frame" x="0.0" y="42" width="414" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y2-QA-lJA" userLabel="Navigation Label">
+                            <rect key="frame" x="24" y="0.0" width="54.5" height="56"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="TPrimary"/>
+                    <constraints>
+                        <constraint firstItem="1Y2-QA-lJA" firstAttribute="centerY" secondItem="V7P-a1-SFP" secondAttribute="centerY" id="2A8-cl-Wmh"/>
+                        <constraint firstItem="1Y2-QA-lJA" firstAttribute="leading" secondItem="V7P-a1-SFP" secondAttribute="leading" constant="24" id="BJX-56-VqW"/>
+                        <constraint firstAttribute="bottom" secondItem="1Y2-QA-lJA" secondAttribute="bottom" id="BSn-2t-Mua"/>
+                        <constraint firstAttribute="height" constant="56" id="eA5-Rj-lYk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zd4-kA-5mc" userLabel="Main View">
+                    <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePicturePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="9wa-aq-8OB" userLabel="Profile Picture Photo">
+                            <rect key="frame" x="159" y="32" width="96" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="96" id="9WO-4g-v87"/>
+                                <constraint firstAttribute="height" constant="96" id="E75-3o-e8U"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adhitya Bagasmiwa Permana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhV-7d-4qY">
+                            <rect key="frame" x="94.5" y="160" width="225" height="19.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adhityabagas98@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvi-uk-mJm">
+                            <rect key="frame" x="127" y="195.5" width="160" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="TBackground"/>
+                    <constraints>
+                        <constraint firstItem="9wa-aq-8OB" firstAttribute="top" secondItem="Zd4-kA-5mc" secondAttribute="top" constant="32" id="0hy-09-4HN"/>
+                        <constraint firstItem="9wa-aq-8OB" firstAttribute="centerX" secondItem="Zd4-kA-5mc" secondAttribute="centerX" id="Eku-u1-LcI"/>
+                        <constraint firstItem="vvi-uk-mJm" firstAttribute="centerX" secondItem="RhV-7d-4qY" secondAttribute="centerX" id="Gzh-Dd-Gc2"/>
+                        <constraint firstItem="vvi-uk-mJm" firstAttribute="top" secondItem="RhV-7d-4qY" secondAttribute="bottom" constant="16" id="P6I-9A-NQj"/>
+                        <constraint firstItem="RhV-7d-4qY" firstAttribute="top" secondItem="9wa-aq-8OB" secondAttribute="bottom" constant="32" id="bwf-Cj-bSG"/>
+                        <constraint firstItem="RhV-7d-4qY" firstAttribute="centerX" secondItem="9wa-aq-8OB" secondAttribute="centerX" id="pm2-rp-Bpy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="TBackground"/>
+            <constraints>
+                <constraint firstItem="V7P-a1-SFP" firstAttribute="top" secondItem="FXV-5i-DES" secondAttribute="bottom" id="8aQ-Bj-7Ae"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FXV-5i-DES" secondAttribute="trailing" id="8d0-bw-MMV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Zd4-kA-5mc" secondAttribute="bottom" id="AQ9-Iw-ieY"/>
+                <constraint firstItem="Zd4-kA-5mc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Igt-rc-C8k"/>
+                <constraint firstItem="V7P-a1-SFP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QBE-Ef-10G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zd4-kA-5mc" secondAttribute="trailing" id="SHB-Iq-Cho"/>
+                <constraint firstItem="FXV-5i-DES" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fDY-ya-S7o"/>
+                <constraint firstItem="Zd4-kA-5mc" firstAttribute="top" secondItem="V7P-a1-SFP" secondAttribute="bottom" id="gSA-tP-4Du"/>
+                <constraint firstItem="FXV-5i-DES" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kgB-2l-qeS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V7P-a1-SFP" secondAttribute="trailing" id="ptU-p2-qnF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ProfilePicturePhoto" width="2303" height="2303"/>
+        <namedColor name="TBackground">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TPrimary">
+            <color red="0.125" green="0.68999999761581421" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
